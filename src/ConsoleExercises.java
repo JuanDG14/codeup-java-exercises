@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class ConsoleExercises {
@@ -18,8 +17,8 @@ public class ConsoleExercises {
         System.out.printf("%s\n%s\n%s\n", fWord, sWord, tWord);
 
         System.out.println("Please enter a sentence");
+        scanner.nextLine();
         String sentence = scanner.nextLine();
-        sentence = scanner.nextLine();
         System.out.printf("You put: %s%n", sentence);
 
         System.out.println("Please enter the length, width, and height of the class?");
