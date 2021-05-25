@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -37,6 +39,22 @@ public class ControlFlowExercises {
 //        }
 
 // question 2
+        Scanner scanner = new Scanner(System.in);
+        final int PIN = 12345;
+        for (int i = 1; i <= 3; i++) {
+            System.out.println("Please enter pin:");
+            int userInputPin = scanner.nextInt();
+            if (userInputPin != PIN) {
+                System.out.println("Incorrect, try again.");
+            } else if (userInputPin == PIN) {
+                System.out.println("Correct, welcome back.");
+                break;
+            } else if (i == 3 && userInputPin != PIN) {
+                System.out.println("Sorry but you have been locked out");
+            }
+        }
+// question 3
+
 
     }
 }
