@@ -5,31 +5,34 @@ public class ControlFlowExercises {
 
 // question 1
 //        int i = 5;
-//        while(i < 15) {
-//            i++;
-//            System.out.println(i);
+//        while(i <= 15) {
+//            System.out.print(i++ + " ");
+//        }
+//        for(int i = 5; i <= 15; i++) {
+//            System.out.print(i + " ");
 //        }
 
 //        int i =0;
 //        do{
-//            i+=2;
 //            System.out.println(i);
+//            i+=2;
 //        }
 //        while (i < 100);
 //        for(int i = 0; i <= 100; i+=2) {
 //            System.out.println(i);
 //        }
 
+//        int i = 100;
 //        do {
-//            i-=5;
 //            System.out.println(i);
+//            i-=5;
 //        }
-//        while (i > -10);
+//        while (i >= -10);
 //        for(int i = 100; i >= -10; i-=5) {
 //            System.out.println(i);
 //        }
 
-//        long i = 2;
+//        long i = 2L;
 //        do {
 //            System.out.println(i);
 //            i *= i;
@@ -54,37 +57,33 @@ public class ControlFlowExercises {
 //            }
 //        }
 // question 3
-
+//
 //        int userInt = 0;
 //        do {
-//
-//
 //            System.out.print("What number would you like see on the table? (-1 cancels ends the loop)");
-//            userInt = scanner.nextInt();
 //            System.out.println("");
+//            userInt = scanner.nextInt();
 //
 //            if(userInt == -1) {
 //                System.out.println("thank you come again!");
 //            } else {
 //                System.out.println("Here is your table!");
-//                System.out.println("");
 //                System.out.println("number | squared | cubed");
 //                System.out.println("------ | ------- | -----");
 //                for (int i = 1; i <= userInt; i++) {
-//                    System.out.println(i + "\t   | " + (i * i) + "\t     |" + "  " + (i * i * i));
+//                    System.out.printf("%-6d | %-7d | %-4d%n", i, i * i, i * i * i);
 //                }
 //            }
 //        }
 //        while (userInt != -1);
-
+//
 
 // question 4
-
+//
         String userResponse = "";
-
         do {
             System.out.println("Please enter a grade");
-            int userInputGrade = scanner.nextInt();
+            byte userInputGrade = scanner.nextByte();
             if (userInputGrade >= 88) {
                 System.out.println("The grade you entered is: A");
             } else if (userInputGrade >= 80 && userInputGrade <= 87) {
@@ -100,6 +99,8 @@ public class ControlFlowExercises {
             userResponse = scanner.next();
             System.out.println(userResponse);
         } while (userResponse.equals("yes"));
+
+
 
 
     }
