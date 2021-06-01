@@ -80,28 +80,29 @@ public class ControlFlowExercises {
 
 // question 4
 //
-        String userResponse = "";
-        do {
-            System.out.println("Please enter a grade");
-            byte userInputGrade = scanner.nextByte();
-            if (userInputGrade >= 88) {
-                System.out.println("The grade you entered is: A");
-            } else if (userInputGrade >= 80 && userInputGrade <= 87) {
-                System.out.println("The grade you entered is: B");
-            } else if (userInputGrade >= 67 && userInputGrade <= 79) {
-                System.out.println("The grade you entered is: C");
-            } else if (userInputGrade >= 60 && userInputGrade <= 66) {
-                System.out.println("The grade you entered is: D");
-            } else if (userInputGrade >= 0 && userInputGrade <= 59) {
-                System.out.println("The grade you entered is: F");
-            }
-            System.out.println("Would like to continue?\nIf so enter yes or no to stop.");
-            userResponse = scanner.next();
-            System.out.println(userResponse);
-        } while (userResponse.equals("yes"));
+//        String userResponse = "";
+//        do {
+//            System.out.println("Please enter a grade");
+//            byte userInputGrade = scanner.nextByte();
+//            if (userInputGrade >= 88) {
+//                System.out.println("The grade you entered is: A");
+//            } else if (userInputGrade >= 80 && userInputGrade <= 87) {
+//                System.out.println("The grade you entered is: B");
+//            } else if (userInputGrade >= 67 && userInputGrade <= 79) {
+//                System.out.println("The grade you entered is: C");
+//            } else if (userInputGrade >= 60 && userInputGrade <= 66) {
+//                System.out.println("The grade you entered is: D");
+//            } else if (userInputGrade >= 0 && userInputGrade <= 59) {
+//                System.out.println("The grade you entered is: F");
+//            }
+//            System.out.println("Would like to continue?\nIf so enter yes or no to stop.");
+//            userResponse = scanner.next();
+//            System.out.println(userResponse);
+//        } while (userResponse.equals("yes"));
 
 
 
 
     }
 }
+

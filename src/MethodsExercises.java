@@ -29,39 +29,37 @@ public class MethodsExercises {
         int userInput = 0;
         System.out.print("Enter a number between 1 and 10: ");
         System.out.println("");
-        do {
             userInput = scanner.nextInt();
             if(userInput < min || userInput > max) {
                 System.out.println("Wrong number, please try again");
+                return getInteger(min, max);
             } else {
                 System.out.println("Thank you, come again");
+                return userInput;
             }
-        } while (userInput < min || userInput > max);
-        return userInput;
     }
 
     public static long getFactorial() {
-        Scanner in = new Scanner(System.in);
-        int num, i, fact = 1;
+        Scanner scanner = new Scanner(System.in);
+        int num, i, result = 1;
         System.out.println("Give me a number between 1 and 10");
-        num = in.nextInt();
+        num = scanner.nextInt();
         String userResponse = "";
         do {
-
-
-            if (num < 0 || num > 10) {
+            if (num < 1 || num > 10) {
                 System.out.println("This number is not applicable to what we asked");
-                return num;
+                return getFactorial();
             } else {
                 for (i = 1; i <= num; i++)
-                    fact = fact * i;
-                System.out.println("Factorial of " + num + " is = " + fact);
+                    result = result * i;
+                System.out.println("Factorial of " + num + " is = " + result);
                 return num;
             }
-            System.out.println("Would like to continue?\nIf so enter yes or no to stop.");
-            userResponse = Scanner.next();
-            System.out.println(userResponse);
-        }while (userResponse.equals("yes"));
+//            String userResponse = "";
+//            System.out.println("Would like to continue?\nIf so enter yes or no to stop.");
+//            userResponse = scanner.next();
+//            System.out.println(userResponse);
+        }while(userResponse.equals("yes"));
     }
 
 
