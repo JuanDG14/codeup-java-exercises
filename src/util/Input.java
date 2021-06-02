@@ -11,14 +11,12 @@ public class Input {
 
     public String getString() {
         System.out.println("Input a sentence");
-        String userInput = scanner.nextLine();
-        System.out.println(userInput);
-        return userInput;
+        return this.scanner.nextLine();
     }
 
     public boolean yesNo(){
         System.out.println("Enter Yes or No");
-        String userResponse = scanner.next();
+        String userResponse = this.scanner.next();
         if (userResponse.equalsIgnoreCase("yes") || userResponse.equalsIgnoreCase("y") || userResponse.equalsIgnoreCase("ya")){
             return true;
         } else {
@@ -26,40 +24,36 @@ public class Input {
         }
     }
 
-    public int getInt (int min, int max){
+    public int getInt (int min, int max) {
         System.out.printf("Please enter a number between %d and %d%n", min, max);
-        while(true){
-            int userInput1 = this.scanner.nextInt();
-            if (userInput1 > min && userInput1 < max){
-                return userInput1;
-            }
+        int userInput = this.scanner.nextInt();
+        if (userInput > min && userInput < max) {
+            return userInput;
+        } else {
             System.out.println("Please enter a number in the given range");
+            return getInt(min, max);
         }
+
     }
 
     public int getInt(){
-        System.out.println("Please enter a number");
-        int userInput2 = scanner.nextInt();
-        System.out.println(userInput2);
-        return userInput2;
+        return this.scanner.nextInt();
     }
 
     public double getDouble(double min, double max) {
-        System.out.printf(String.format("Enter a number between %,.2f and %,.2f with 2 decimal points%n", min, max));
-        while (true) {
+        System.out.printf(String.format("Enter a number between %f and %f%n", min, max));
             double userInput3 = this.scanner.nextDouble();
             if (userInput3 > min && userInput3 < max) {
                 return userInput3;
-            }
-            System.out.println("Please enter a number in the given range");
+            } else {
+                System.out.println("Please enter a number in the given range");
+                return getDouble(min, max);
         }
     }
 
     public double getDouble() {
-        System.out.println("Enter a number with 2 decimal points");
-        double userInput4 = scanner.nextDouble();
-        System.out.println(userInput4);
-        return userInput4;
+
+        return this.scanner.nextDouble();
     }
 
 }
