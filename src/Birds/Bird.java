@@ -34,7 +34,14 @@ public class Bird {
         System.out.println("Flap flap");
     }
 
+    public Bird(String nameOfThisBird, boolean itCanFly){
+        this.name = nameOfThisBird;
+        this.canFly = itCanFly;
+    }
+
     public Bird(){
-        System.out.println("A Bird just got created");
+        System.out.println("A Bird Just Got Created");
+        this.canFly = true;
+        this.name = "Parrot";
     }
 }

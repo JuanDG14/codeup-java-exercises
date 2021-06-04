@@ -9,7 +9,7 @@ public class BirdTest {
 //            cardinal.move();
 
 //            Duck mallard                            =                                               new Duck();
-            // declare a reference variable         a
+            // declare a reference variable           assigned                              call the default constructor
 //            mallard.setName("Mallard");
 //            mallard.makeNoise();
 
@@ -26,6 +26,11 @@ public class BirdTest {
 
             // Polymorphism allows us to have different refrences and object
 
-            Finch houseFinch = new Finch();
+            //        Finch houseFinch = new Finch();
+            Bird piratesBestFriend = new Bird();
+            System.out.println(piratesBestFriend.getName());
+
+            Finch cassinsFinch = new Finch("Cassin's Finch", true);
+            System.out.println(cassinsFinch.getName());
         }
 }
