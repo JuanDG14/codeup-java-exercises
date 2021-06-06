@@ -1,7 +1,23 @@
 package shapes;
-abstract class Square extends Quadrilateral{
-    public Square (double length, double width){
+public class Square extends Quadrilateral{
+    public Square(double length, double width) {
         super(length, width);
+    }
+    public double getPerimeter() {
+        return 4 * length;
+    }
+
+    public double getArea(){
+        return length * length;
+    }
+
+    public double setLength(double side){
+        return this.length = side;
+    }
+
+    public double setWidth(double side){
+        return this.width = side;
+    }
 
 //    protected double side;
 //
@@ -20,5 +36,4 @@ abstract class Square extends Quadrilateral{
 //        System.out.println("this is getting overwritten");
 //        return (4 * side);
 //    }
-    }
 }
