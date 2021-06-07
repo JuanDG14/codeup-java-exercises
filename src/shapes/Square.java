@@ -1,7 +1,7 @@
 package shapes;
 public class Square extends Quadrilateral{
-    public Square(double length, double width) {
-        super(length, width);
+    public Square(double side) {
+        super(side, side);
     }
     public double getPerimeter() {
         return 4 * length;
