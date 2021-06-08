@@ -62,7 +62,7 @@ public class GradesApplication {
                 System.out.println("Would you like to select another student? yes/no");
                 String answer = scanner.nextLine();
                 if (!answer.equalsIgnoreCase("yes")) {
-                    System.out.println("Goodbye! Thank you for using our services!");
+                    System.out.println("Goodbye! and have a wonderful day!");
                     confirm = false;
                 }
             }
