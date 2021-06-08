@@ -16,7 +16,7 @@ public class Student {
     }
 
     public void addGrade(int grade) {
-        grades.add(grade);
+        this.grades.add(grade);
     }
 
     public ArrayList<Integer> getGrades() {
@@ -25,10 +25,10 @@ public class Student {
 
     public double getGradeAverage() {
         int total = 0;
-        for (int i = 0; i < grades.size(); i++) {
-            total = total + grades.get(i);
+        for (Integer grade : grades) {
+            total = total + grade;
         }
-        int average = total / grades.size();
+        int average = total / this.grades.size();
 
         return average;
     }

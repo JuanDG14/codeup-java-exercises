@@ -24,6 +24,16 @@ public class Input {
         }
     }
 
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        String userResponse = this.scanner.next();
+        if (userResponse.equalsIgnoreCase("yes") || userResponse.equalsIgnoreCase("y") || userResponse.equalsIgnoreCase("ya")){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int getInt (int min, int max) {
         System.out.printf("Please enter a number between %d and %d%n", min, max);
         int userInput = this.scanner.nextInt();
