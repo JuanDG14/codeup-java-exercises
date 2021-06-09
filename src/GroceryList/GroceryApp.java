@@ -15,15 +15,14 @@ public class GroceryApp {
     public static ArrayList<String> drinksList = new ArrayList<>();
 
 
-    public static void main() {
-        Scanner scanner = new Scanner(System.in);
-
+    public static void creating() {
         boolean createList = input.yesNo("Would you like to start creating your grocery list?");
         if (createList) {
-            addItem();
+            makeList();
         }
     }
 
-    private static void addItem() {
+    public static void makeList() {
+
     }
 }
