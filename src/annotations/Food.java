@@ -10,10 +10,6 @@ public interface Food {
 
 
     public static String[] groceryCats = {
-//        "Baby",
-//        "Beverages",
-//        "Bread & Bakery",
-//        "Breakfast & Cereal",
             "Dairy, Eggs & Cheese",
             "Deli",
             "Frozen Foods",
