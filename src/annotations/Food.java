@@ -1,12 +1,11 @@
 package annotations;
-//
+
 import util.Input;
 
 import java.util.HashMap;
 import java.util.Scanner;
 public interface Food {
-//    public
-//
+
 
 
     public static String[] groceryCats = {
