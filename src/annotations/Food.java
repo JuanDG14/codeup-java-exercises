@@ -80,22 +80,6 @@ public interface Food {
 
     public static void main(String[] args) {
         makeIt();
-//        items.put("Strawberries", 7);
-//
-//        addItemOrUpdateItemVal(items);
-
-//        System.out.println(items.get("Banana"));
-
-//        updateVal(items, "Banana", 4);
-
-//        System.out.println(items.get("Banana"));
-
-        // this will display what is in the produce hash map key value
-//        System.out.println(gList.get("Produce"));
-
-        // this will display the value of strawberries within the hash map key value within the produce hashmap key value
-//        System.out.println(gList.get("Produce").get("Strawberries"));
-//        System.out.println(gList.get("Produce").keySet());
 
     }
 }
