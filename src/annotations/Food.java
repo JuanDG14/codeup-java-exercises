@@ -8,7 +8,8 @@ public interface Food {
 
 
 
-    public static String[] groceryCats = {
+    String[] groceryCats = {
+
             "Dairy, Eggs & Cheese",
             "Deli",
             "Frozen Foods",
@@ -16,20 +17,20 @@ public interface Food {
             "Produce"
     };
 
-    public static Input input = new Input();
+    Input input = new Input();
 
-    public static Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
-    public static HashMap<String, HashMap<String, Integer>> gList = new HashMap<>();
+    HashMap<String, HashMap<String, Integer>> gList = new HashMap<>();
 
-    public static void makeIt() {
+    static void makeIt() {
         System.out.println("Would you like to create a grocery list?");
         if (input.yesNo()) {
             makeGroceryList();
         }
     }
 
-    public static void makeGroceryList() {
+    static void makeGroceryList() {
         do {
             System.out.println("Which category would you like to choose from?");
             for (int i = 0; i < groceryCats.length; ++i) {
@@ -78,10 +79,6 @@ public interface Food {
 
 
     public static void main(String[] args) {
-//        HashMap<String, Integer> items = new HashMap<>();
-//        items.put("Banana", 7);
-//        gList.put(groceryCats[4], items);
-
         makeIt();
 //        items.put("Strawberries", 7);
 //
